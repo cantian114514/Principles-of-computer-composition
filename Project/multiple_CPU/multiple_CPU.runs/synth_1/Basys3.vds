@@ -1,0 +1,746 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Dec 24 12:54:49 2022
+# Process ID: 212952
+# Current directory: D:/vivado/Project/multiple_CPU/multiple_CPU.runs/synth_1
+# Command line: vivado.exe -log Basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3.tcl
+# Log file: D:/vivado/Project/multiple_CPU/multiple_CPU.runs/synth_1/Basys3.vds
+# Journal file: D:/vivado/Project/multiple_CPU/multiple_CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Basys3.tcl -notrace
+Command: synth_design -top Basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 203660 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 349.816 ; gain = 80.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basys3' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:2]
+	Parameter T1MS bound to: 100000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'multipleCPU' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/multipleCPU.v:2]
+INFO: [Synth 8-638] synthesizing module 'PC' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/PC.v:2]
+INFO: [Synth 8-256] done synthesizing module 'PC' (1#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/PC.v:2]
+INFO: [Synth 8-638] synthesizing module 'Ins_mem' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:2]
+INFO: [Synth 8-3876] $readmem data file 'D:/vivado/Project/multiple_CPU/instruction.txt' is read successfully [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:25]
+WARNING: [Synth 8-5788] Register op_reg in module Ins_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:30]
+WARNING: [Synth 8-5788] Register rs_reg in module Ins_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:31]
+WARNING: [Synth 8-5788] Register rt_reg in module Ins_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:33]
+WARNING: [Synth 8-5788] Register rd_reg in module Ins_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:34]
+WARNING: [Synth 8-5788] Register sa_reg in module Ins_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:35]
+WARNING: [Synth 8-5788] Register func_reg in module Ins_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:37]
+WARNING: [Synth 8-5788] Register immediate_reg in module Ins_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Ins_mem' (2#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v:2]
+INFO: [Synth 8-638] synthesizing module 'Register_File' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Register_File.v:2]
+INFO: [Synth 8-256] done synthesizing module 'Register_File' (3#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Register_File.v:2]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ALU.v:13]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-638] synthesizing module 'SignZeroExtend' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/SignZeroExtend.v:2]
+INFO: [Synth 8-256] done synthesizing module 'SignZeroExtend' (5#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/SignZeroExtend.v:2]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:2]
+WARNING: [Synth 8-567] referenced signal 'DataIn' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-567] referenced signal 'mem' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:14]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (6#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:2]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ControlUnit.v:2]
+	Parameter _ADD bound to: 3'b000 
+	Parameter _SUB bound to: 3'b001 
+	Parameter _SLL bound to: 3'b010 
+	Parameter _OR bound to: 3'b011 
+	Parameter _AND bound to: 3'b100 
+	Parameter _SLTU bound to: 3'b101 
+	Parameter _SLT bound to: 3'b110 
+	Parameter _XOR bound to: 3'b111 
+	Parameter IF bound to: 3'b000 
+	Parameter ID bound to: 3'b001 
+	Parameter EXELS bound to: 3'b010 
+	Parameter MEM bound to: 3'b011 
+	Parameter WBL bound to: 3'b100 
+	Parameter EXEBR bound to: 3'b101 
+	Parameter EXEAL bound to: 3'b110 
+	Parameter WBAL bound to: 3'b111 
+	Parameter ADDf bound to: 6'b100000 
+	Parameter SUBf bound to: 6'b100010 
+	Parameter ANDf bound to: 6'b100100 
+	Parameter SLLf bound to: 6'b000000 
+	Parameter SLT bound to: 6'b101010 
+	Parameter ADDIU bound to: 6'b001001 
+	Parameter ANDI bound to: 6'b001000 
+	Parameter ORI bound to: 6'b001101 
+	Parameter XORI bound to: 6'b001110 
+	Parameter SLTI bound to: 6'b001010 
+	Parameter SW bound to: 6'b101011 
+	Parameter LW bound to: 6'b100011 
+	Parameter BEQ bound to: 6'b000100 
+	Parameter BNE bound to: 6'b000101 
+	Parameter BLTZ bound to: 6'b000001 
+	Parameter J bound to: 6'b000010 
+	Parameter JR bound to: 6'b000000 
+	Parameter JAL bound to: 6'b000011 
+	Parameter HALT bound to: 6'b111111 
+WARNING: [Synth 8-567] referenced signal 'sign' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ControlUnit.v:164]
+WARNING: [Synth 8-5788] Register D_Tri_reg in module ControlUnit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ControlUnit.v:83]
+WARNING: [Synth 8-5788] Register DataMemRW_reg in module ControlUnit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ControlUnit.v:95]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (7#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ControlUnit.v:2]
+INFO: [Synth 8-638] synthesizing module 'WTR' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/WTR.v:2]
+INFO: [Synth 8-256] done synthesizing module 'WTR' (8#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/WTR.v:2]
+INFO: [Synth 8-638] synthesizing module 'MUX2L_32' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX2L_32.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MUX2L_32' (9#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX2L_32.v:3]
+INFO: [Synth 8-638] synthesizing module 'MUX4L_5' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX4L_5.v:2]
+INFO: [Synth 8-256] done synthesizing module 'MUX4L_5' (10#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX4L_5.v:2]
+INFO: [Synth 8-638] synthesizing module 'MUX4L_32' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX4L_32.v:2]
+INFO: [Synth 8-256] done synthesizing module 'MUX4L_32' (11#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX4L_32.v:2]
+INFO: [Synth 8-256] done synthesizing module 'multipleCPU' (12#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/multipleCPU.v:2]
+WARNING: [Synth 8-350] instance 'mcpu' of module 'multipleCPU' requires 17 connections, but only 16 given [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:29]
+INFO: [Synth 8-638] synthesizing module 'Debounce' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Debounce.v:2]
+	Parameter SAMPLE_TIME bound to: 5000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Debounce' (13#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Debounce.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:46]
+INFO: [Synth 8-638] synthesizing module 'SEG' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/SEG.v:2]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/SEG.v:9]
+INFO: [Synth 8-256] done synthesizing module 'SEG' (14#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/SEG.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:68]
+WARNING: [Synth 8-567] referenced signal 'AN' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+WARNING: [Synth 8-567] referenced signal 'SW' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+WARNING: [Synth 8-567] referenced signal 'newPC' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+WARNING: [Synth 8-567] referenced signal 'reg1' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+WARNING: [Synth 8-567] referenced signal 'reg2' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+WARNING: [Synth 8-567] referenced signal 'DB' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+WARNING: [Synth 8-567] referenced signal 'CurPC' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+WARNING: [Synth 8-567] referenced signal 'rs' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+WARNING: [Synth 8-567] referenced signal 'rt' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+WARNING: [Synth 8-567] referenced signal 'ALU_Out' should be on the sensitivity list [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:67]
+INFO: [Synth 8-256] done synthesizing module 'Basys3' (15#1) [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:2]
+WARNING: [Synth 8-3331] design SEG has unconnected port Reset
+WARNING: [Synth 8-3331] design Ins_mem has unconnected port RW
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 433.980 ; gain = 164.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 433.980 ; gain = 164.703
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/constrs_1/new/multipleCPU.xdc]
+Finished Parsing XDC File [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/constrs_1/new/multipleCPU.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/constrs_1/new/multipleCPU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 733.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 733.004 ; gain = 463.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 733.004 ; gain = 463.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 733.004 ; gain = 463.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ALU.v:13]
+INFO: [Synth 8-5546] ROM "ALUOp5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D_Tri" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D_Tri" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegWre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_out_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_out_reg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element count_low_reg was removed.  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Debounce.v:12]
+WARNING: [Synth 8-6014] Unused sequential element count_high_reg was removed.  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Debounce.v:17]
+INFO: [Synth 8-802] inferred FSM for state register 'AN_reg' in module 'Basys3'
+WARNING: [Synth 8-6014] Unused sequential element AN_reg was removed.  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:40]
+INFO: [Synth 8-5544] ROM "AN" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "store" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'DataOut_reg' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[0]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[2]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[3]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[4]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[5]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[6]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[7]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[8]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[9]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[10]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[11]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[12]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[13]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[14]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[15]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[16]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[17]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[18]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[19]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[20]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[21]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[22]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[23]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[24]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[25]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[26]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[27]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[28]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[29]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[30]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[31]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[32]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[33]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[34]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[35]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[36]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[37]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[38]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[39]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[40]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[41]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[42]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[43]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[44]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[45]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[46]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[47]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[48]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[49]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[50]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[51]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[52]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[53]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[54]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[55]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[56]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[57]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[58]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[59]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[60]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[61]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[62]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[63]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[64]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[65]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[66]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[67]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[68]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[69]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[70]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[71]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[72]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[73]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[74]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[75]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[76]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[77]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[78]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[79]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[80]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[81]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[82]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[83]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[84]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[85]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[86]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[87]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[88]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[89]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[90]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[91]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[92]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[93]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[94]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[95]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[96]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[97]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[98]' [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v:18]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element AN_reg was removed.  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:40]
+WARNING: [Synth 8-6014] Unused sequential element AN_reg was removed.  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:40]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                            00001 |                             0000
+                 iSTATE2 |                            00010 |                             0111
+                  iSTATE |                            00100 |                             1110
+                 iSTATE0 |                            01000 |                             1101
+                 iSTATE1 |                            10000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'AN_reg' using encoding 'one-hot' in module 'Basys3'
+WARNING: [Synth 8-6014] Unused sequential element AN_reg was removed.  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Basys3.v:40]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 733.004 ; gain = 463.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |DataMemory__GB0  |           1|     40651|
+|2     |DataMemory__GB1  |           1|     14680|
+|3     |DataMemory__GB2  |           1|     19840|
+|4     |DataMemory__GB3  |           1|     25180|
+|5     |DataMemory__GB4  |           1|     31098|
+|6     |DataMemory__GB5  |           1|     39003|
+|7     |DataMemory__GB6  |           1|     48884|
+|8     |DataMemory__GB7  |           1|     61101|
+|9     |DataMemory__GB8  |           1|     47470|
+|10    |DataMemory__GB9  |           1|     28710|
+|11    |DataMemory__GB10 |           1|     51704|
+|12    |DataMemory__GB11 |           1|     43516|
+|13    |multipleCPU__GC0 |           1|      2458|
+|14    |Basys3__GC0      |           1|       976|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 144   
+	   2 Input      8 Bit        Muxes := 254   
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 12    
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 16    
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 195   
+	   2 Input      1 Bit        Muxes := 258   
+	   4 Input      1 Bit        Muxes := 64    
+	  11 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 144   
+	   2 Input      8 Bit        Muxes := 254   
+	   4 Input      2 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 192   
+	   2 Input      1 Bit        Muxes := 253   
+	   4 Input      1 Bit        Muxes := 64    
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Ins_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 8     
+Module Register_File 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module SignZeroExtend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+Module MUX2L_32__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX2L_32__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX2L_32__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX2L_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX4L_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+Module MUX4L_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module multipleCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+Module Debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "debounce/key_out_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce/key_out_reg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element debounce/count_low_reg was removed.  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Debounce.v:12]
+WARNING: [Synth 8-6014] Unused sequential element debounce/count_high_reg was removed.  [D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Debounce.v:17]
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:28 . Memory (MB): peak = 733.004 ; gain = 463.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Ins_mem     | p_0_out    | 128x8         | LUT            | 
+|Ins_mem     | p_0_out    | 128x8         | LUT            | 
+|Ins_mem     | p_0_out    | 128x8         | LUT            | 
+|Ins_mem     | p_0_out    | 128x8         | LUT            | 
+|Basys3      | p_0_out    | 128x8         | LUT            | 
+|Basys3      | p_0_out    | 128x8         | LUT            | 
+|Basys3      | p_0_out    | 128x8         | LUT            | 
+|Basys3      | p_0_out    | 128x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------+-----------+----------------------+---------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives    | 
++------------+-----------------+-----------+----------------------+---------------+
+|Basys3      | rf/register_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+-----------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |DataMemory__GB0  |           1|     15038|
+|2     |DataMemory__GB1  |           1|       897|
+|3     |DataMemory__GB2  |           1|       160|
+|4     |DataMemory__GB3  |           1|       119|
+|5     |DataMemory__GB4  |           1|       133|
+|6     |DataMemory__GB5  |           1|       136|
+|7     |DataMemory__GB6  |           1|       193|
+|8     |DataMemory__GB7  |           1|       191|
+|9     |DataMemory__GB8  |           1|       162|
+|10    |DataMemory__GB9  |           1|       181|
+|11    |DataMemory__GB10 |           1|       129|
+|12    |DataMemory__GB11 |           1|       154|
+|13    |multipleCPU__GC0 |           1|      2131|
+|14    |Basys3__GC0      |           1|       349|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 733.004 ; gain = 463.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 733.301 ; gain = 464.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |DataMemory__GB0  |           1|     14846|
+|2     |DataMemory__GB1  |           1|       897|
+|3     |DataMemory__GB2  |           1|       160|
+|4     |DataMemory__GB3  |           1|       119|
+|5     |DataMemory__GB4  |           1|       133|
+|6     |DataMemory__GB5  |           1|       136|
+|7     |DataMemory__GB6  |           1|       193|
+|8     |DataMemory__GB7  |           1|       191|
+|9     |DataMemory__GB8  |           1|       162|
+|10    |DataMemory__GB9  |           1|       181|
+|11    |DataMemory__GB10 |           1|       129|
+|12    |DataMemory__GB11 |           1|       154|
+|13    |multipleCPU__GC0 |           1|      2131|
+|14    |Basys3__GC0      |           1|       349|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:16 ; elapsed = 00:02:57 . Memory (MB): peak = 735.375 ; gain = 466.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |DataMemory__GB0 |           1|      7997|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:19 ; elapsed = 00:03:00 . Memory (MB): peak = 735.375 ; gain = 466.098
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:19 ; elapsed = 00:03:00 . Memory (MB): peak = 735.375 ; gain = 466.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:19 ; elapsed = 00:03:00 . Memory (MB): peak = 735.375 ; gain = 466.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:19 ; elapsed = 00:03:00 . Memory (MB): peak = 735.375 ; gain = 466.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:20 ; elapsed = 00:03:01 . Memory (MB): peak = 735.375 ; gain = 466.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:20 ; elapsed = 00:03:01 . Memory (MB): peak = 735.375 ; gain = 466.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    44|
+|3     |LUT1   |   121|
+|4     |LUT2   |   139|
+|5     |LUT3   |  1301|
+|6     |LUT4   |   158|
+|7     |LUT5   |   570|
+|8     |LUT6   |  3714|
+|9     |MUXF7  |  1154|
+|10    |MUXF8  |   544|
+|11    |RAM32M |    12|
+|12    |FDCE   |    92|
+|13    |FDPE   |    51|
+|14    |FDRE   |   239|
+|15    |FDSE   |     1|
+|16    |LD     |  2084|
+|17    |LDC    |    35|
+|18    |IBUF   |     5|
+|19    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+--------------+------+
+|      |Instance   |Module        |Cells |
++------+-----------+--------------+------+
+|1     |top        |              | 10278|
+|2     |  debounce |Debounce      |   111|
+|3     |  led      |SEG           |     7|
+|4     |  mcpu     |multipleCPU   | 10064|
+|5     |    alu    |ALU           |    12|
+|6     |    cu     |ControlUnit   |    49|
+|7     |    dm     |DataMemory    |  5889|
+|8     |    im     |Ins_mem       |   794|
+|9     |    pc     |PC            |   182|
+|10    |    rf     |Register_File |    20|
+|11    |    wtrA   |WTR           |    57|
+|12    |    wtrALU |WTR_0         |  1771|
+|13    |    wtrB   |WTR_1         |  1226|
+|14    |    wtrMEM |WTR_2         |    32|
++------+-----------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:20 ; elapsed = 00:03:01 . Memory (MB): peak = 735.375 ; gain = 466.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 266 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:06 ; elapsed = 00:02:53 . Memory (MB): peak = 735.375 ; gain = 167.074
+Synthesis Optimization Complete : Time (s): cpu = 00:02:20 ; elapsed = 00:03:03 . Memory (MB): peak = 735.375 ; gain = 466.098
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2180 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 44 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2131 instances were transformed.
+  LD => LDCE: 2052 instances
+  LD => LDCE (inverted pins: G): 32 instances
+  LDC => LDCE: 35 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+75 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:23 ; elapsed = 00:03:08 . Memory (MB): peak = 735.375 ; gain = 472.859
+INFO: [Common 17-1381] The checkpoint 'D:/vivado/Project/multiple_CPU/multiple_CPU.runs/synth_1/Basys3.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 735.375 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 24 12:58:07 2022...

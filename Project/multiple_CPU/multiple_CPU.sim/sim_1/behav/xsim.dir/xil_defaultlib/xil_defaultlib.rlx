@@ -1,0 +1,18 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+D:/vivado/Project/multiple_CPU/multiple_CPU.sim/sim_1/behav/glbl.v,1497407496,verilog,,,,glbl,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sim_1/new/Sim.v,1671793567,verilog,,,,Sim,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ALU.v,1670237285,verilog,,,,ALU,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ControlUnit.v,1671857333,verilog,,,,ControlUnit,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v,1671796517,verilog,,,,DataMemory,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v,1671857557,verilog,,,,Ins_mem,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX2L_32.v,1670082591,verilog,,,,MUX2L_32,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX4L_32.v,1670084083,verilog,,,,MUX4L_32,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX4L_5.v,1670084354,verilog,,,,MUX4L_5,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/PC.v,1671857528,verilog,,,,PC,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Register_File.v,1671793535,verilog,,,,Register_File,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/SignZeroExtend.v,1670165275,verilog,,,,SignZeroExtend,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/WTR.v,1670250909,verilog,,,,WTR,,,,,,,,
+D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/multipleCPU.v,1671857449,verilog,,,,multipleCPU,,,,,,,,

@@ -1,0 +1,584 @@
+
+*** Running vivado
+    with args -log Basys3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Basys3.tcl -notrace
+Command: synth_design -top Basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 141020 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 350.129 ; gain = 79.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basys3' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:2]
+	Parameter T1MS bound to: 100000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Single_Cycle_CPU' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Single_Cycle_CPU.v:3]
+INFO: [Synth 8-638] synthesizing module 'Program_counter' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Program_counter.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Program_counter' (1#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Program_counter.v:3]
+INFO: [Synth 8-638] synthesizing module 'Ins_memory' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Ins_memory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'D:/vivado/Project/SingleCycleCPU/Instructions.txt' is read successfully [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Ins_memory.v:11]
+INFO: [Synth 8-256] done synthesizing module 'Ins_memory' (2#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Ins_memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:13]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (3#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-638] synthesizing module 'Data_memory' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Data_memory.v:3]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "mem_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'Data_memory' (4#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Data_memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'Extension' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Extension.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Extension' (5#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Extension.v:3]
+INFO: [Synth 8-638] synthesizing module 'MUX_5b' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/MUX_5b.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MUX_5b' (6#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/MUX_5b.v:3]
+INFO: [Synth 8-638] synthesizing module 'MUX_32b' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/MUX_32b.v:2]
+INFO: [Synth 8-256] done synthesizing module 'MUX_32b' (7#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/MUX_32b.v:2]
+INFO: [Synth 8-638] synthesizing module 'Register_File' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Register_File.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Register_File' (8#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Register_File.v:3]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:52]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:48]
+WARNING: [Synth 8-6014] Unused sequential element InsMemRw_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:44]
+WARNING: [Synth 8-6014] Unused sequential element DBDataSrc_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:47]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (9#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Single_Cycle_CPU' (10#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Single_Cycle_CPU.v:3]
+INFO: [Synth 8-638] synthesizing module 'Debounce' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Debounce.v:2]
+	Parameter SAMPLE_TIME bound to: 10000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Debounce' (11#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Debounce.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:40]
+INFO: [Synth 8-638] synthesizing module 'SegLed' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SegLed.v:2]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SegLed.v:13]
+INFO: [Synth 8-256] done synthesizing module 'SegLed' (12#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SegLed.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:62]
+WARNING: [Synth 8-567] referenced signal 'AN' should be on the sensitivity list [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:61]
+WARNING: [Synth 8-567] referenced signal 'SW' should be on the sensitivity list [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:61]
+WARNING: [Synth 8-567] referenced signal 'newAddress' should be on the sensitivity list [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:61]
+WARNING: [Synth 8-567] referenced signal 'Reg1Out' should be on the sensitivity list [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:61]
+WARNING: [Synth 8-567] referenced signal 'Reg2Out' should be on the sensitivity list [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:61]
+WARNING: [Synth 8-567] referenced signal 'WriteData' should be on the sensitivity list [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:61]
+WARNING: [Synth 8-567] referenced signal 'CurPC' should be on the sensitivity list [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:61]
+WARNING: [Synth 8-567] referenced signal 'instcode' should be on the sensitivity list [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:61]
+WARNING: [Synth 8-567] referenced signal 'ALU_Out' should be on the sensitivity list [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:61]
+INFO: [Synth 8-256] done synthesizing module 'Basys3' (13#1) [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 390.207 ; gain = 119.781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 390.207 ; gain = 119.781
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/constrs_1/new/Single_Cycle_CPU.xdc]
+Finished Parsing XDC File [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/constrs_1/new/Single_Cycle_CPU.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/constrs_1/new/Single_Cycle_CPU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 689.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 689.156 ; gain = 418.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 689.156 ; gain = 418.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 689.156 ; gain = 418.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:13]
+INFO: [Synth 8-5546] ROM "PCWre0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mRD0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mWR0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExtSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_out_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_out_reg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element count_low_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Debounce.v:13]
+WARNING: [Synth 8-6014] Unused sequential element count_high_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Debounce.v:18]
+INFO: [Synth 8-802] inferred FSM for state register 'AN_reg' in module 'Basys3'
+WARNING: [Synth 8-6014] Unused sequential element AN_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:34]
+INFO: [Synth 8-5544] ROM "AN" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "store" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Ins_memory.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'DataOut_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Data_memory.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWre_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'ExtSel_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Control_Unit.v:61]
+WARNING: [Synth 8-6014] Unused sequential element AN_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:34]
+WARNING: [Synth 8-6014] Unused sequential element AN_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:34]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                            00001 |                             0000
+                 iSTATE2 |                            00010 |                             0111
+                  iSTATE |                            00100 |                             1110
+                 iSTATE0 |                            01000 |                             1101
+                 iSTATE1 |                            10000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'AN_reg' using encoding 'one-hot' in module 'Basys3'
+WARNING: [Synth 8-6014] Unused sequential element AN_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'store_reg' [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 689.156 ; gain = 418.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 28    
+	  17 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   4 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 26    
+	  13 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+Module Program_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Ins_memory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module Data_memory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 28    
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 24    
+Module Extension 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module MUX_5b 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MUX_32b 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Register_File 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Control_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      3 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  13 Input      2 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Single_Cycle_CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+Module Debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module SegLed 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "debounce/key_out_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce/key_out_reg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element debounce/count_low_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Debounce.v:13]
+WARNING: [Synth 8-6014] Unused sequential element debounce/count_high_reg was removed.  [D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Debounce.v:18]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[31]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[30]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[29]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[28]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[27]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[26]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[25]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[24]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[23]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[22]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[21]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[20]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[19]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[18]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[17]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[16]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[15]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[14]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[13]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[12]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[11]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[10]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[9]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[8]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[7]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[6]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port DAddr[5]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\scpu/pc/PC_reg_rep[0] )
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[31]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[30]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[29]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[28]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[27]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[26]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[25]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[24]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[23]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[22]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[21]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[20]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[19]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[18]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[17]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[16]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[15]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[14]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[13]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[12]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[11]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[10]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[9]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[8]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg[0]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[31]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[30]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[29]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[28]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[27]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[26]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[25]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[24]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[23]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[22]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[21]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[20]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[19]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[18]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[17]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[16]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[15]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[14]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[13]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[12]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[11]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[10]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[9]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[8]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[7]) is unused and will be removed from module Basys3.
+WARNING: [Synth 8-3332] Sequential element (scpu/pc/PC_reg_rep[0]) is unused and will be removed from module Basys3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 698.883 ; gain = 428.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Ins_memory  | p_0_out    | 128x8         | LUT            | 
+|Ins_memory  | p_0_out    | 128x8         | LUT            | 
+|Ins_memory  | p_0_out    | 128x8         | LUT            | 
+|Ins_memory  | p_0_out    | 128x8         | LUT            | 
+|Basys3      | p_0_out    | 128x8         | LUT            | 
+|Basys3      | p_0_out    | 128x8         | LUT            | 
+|Basys3      | p_0_out    | 128x8         | LUT            | 
+|Basys3      | p_0_out    | 128x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+----------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives    | 
++------------+----------------------------+-----------+----------------------+---------------+
+|Basys3      | scpu/res_file/register_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+----------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 698.883 ; gain = 428.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 698.883 ; gain = 428.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 711.988 ; gain = 441.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 711.988 ; gain = 441.562
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 711.988 ; gain = 441.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 711.988 ; gain = 441.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 711.988 ; gain = 441.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 711.988 ; gain = 441.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 711.988 ; gain = 441.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    32|
+|3     |LUT1   |    71|
+|4     |LUT2   |    30|
+|5     |LUT3   |    92|
+|6     |LUT4   |   127|
+|7     |LUT5   |   378|
+|8     |LUT6   |   623|
+|9     |MUXF7  |   195|
+|10    |RAM32M |    12|
+|11    |FDCE   |    13|
+|12    |FDRE   |   322|
+|13    |FDSE   |     1|
+|14    |LD     |    78|
+|15    |IBUF   |     5|
+|16    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+-----------------+------+
+|      |Instance     |Module           |Cells |
++------+-------------+-----------------+------+
+|1     |top          |                 |  1994|
+|2     |  debounce   |Debounce         |   111|
+|3     |  scpu       |Single_Cycle_CPU |  1780|
+|4     |    alu      |ALU              |    12|
+|5     |    con_unit |Control_Unit     |   437|
+|6     |    data_m   |Data_memory      |   735|
+|7     |    ins_m    |Ins_memory       |   382|
+|8     |    pc       |Program_counter  |   115|
+|9     |    res_file |Register_File    |    95|
++------+-------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 711.988 ; gain = 441.562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 96 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 711.988 ; gain = 142.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 711.988 ; gain = 441.562
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 127 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 90 instances were transformed.
+  LD => LDCE: 78 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+58 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 711.988 ; gain = 449.324
+INFO: [Common 17-1381] The checkpoint 'D:/vivado/Project/SingleCycleCPU/SingleCycleCPU.runs/synth_1/Basys3.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 711.988 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 19 22:16:42 2022...

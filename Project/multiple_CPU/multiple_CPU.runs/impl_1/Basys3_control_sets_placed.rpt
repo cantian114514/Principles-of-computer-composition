@@ -1,0 +1,439 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sat Dec 24 12:59:05 2022
+| Host         : LAPTOP-73QU987G running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Basys3_control_sets_placed.rpt
+| Design       : Basys3
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   374 |
+| Unused register locations in slices containing registers |   738 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            2170 |         1328 |
+| No           | No                    | Yes                    |             104 |           82 |
+| No           | Yes                   | No                     |             184 |           86 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              39 |           15 |
+| Yes          | Yes                   | No                     |               5 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+--------------------------+------------------------------------------------+------------------+----------------+
+|                   Clock Signal                  |       Enable Signal      |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-------------------------------------------------+--------------------------+------------------------------------------------+------------------+----------------+
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rt_reg[1]_LDC_i_2_n_0                  |                1 |              1 |
+|  debounce/key_out_reg_BUFG                      |                          | mcpu/cu/D_Tri_reg[0]_LDC_i_1_n_0               |                1 |              1 |
+|  debounce/key_out_reg_BUFG                      |                          | mcpu/cu/D_Tri_reg[0]_LDC_i_2_n_0               |                1 |              1 |
+|  debounce/key_out_reg_BUFG                      |                          | mcpu/cu/D_Tri_reg[1]_LDC_i_1_n_0               |                1 |              1 |
+|  debounce/key_out_reg_BUFG                      |                          | mcpu/cu/D_Tri_reg[1]_LDC_i_2_n_0               |                1 |              1 |
+|  debounce/key_out_reg_BUFG                      |                          | mcpu/cu/D_Tri_reg[2]_LDC_i_1_n_0               |                1 |              1 |
+|  debounce/key_out_reg_BUFG                      |                          | mcpu/cu/D_Tri_reg[2]_LDC_i_2_n_0               |                1 |              1 |
+|  mcpu/rd1[3]                                    |                          | mcpu/pc/immediate_reg[11]_C                    |                1 |              1 |
+|  mcpu/rd1[2]                                    |                          | mcpu/pc/immediate_reg[10]_C                    |                1 |              1 |
+|  mcpu/rd1[7]                                    |                          | mcpu/pc/immediate_reg[15]_C                    |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rt_reg[4]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rt_reg[3]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rt_reg[2]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rs1[4]                                    |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rt_reg[0]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rs_reg[4]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rs_reg[3]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rs_reg[2]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rs_reg[1]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/rs_reg[0]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/op_reg[5]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/op_reg[4]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/op_reg[3]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/op_reg[2]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/op_reg[1]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/rs1[0]                                    |                          | mcpu/im/rt_reg[0]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/rs1[1]                                    |                          | mcpu/im/rt_reg[1]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/rs1[2]                                    |                          | mcpu/im/rt_reg[2]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/rs1[3]                                    |                          | mcpu/im/rt_reg[3]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/rs1[4]                                    |                          | mcpu/im/rt_reg[4]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/rs1[5]                                    |                          | mcpu/im/rs_reg[0]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/rs1[6]                                    |                          | mcpu/im/rs_reg[1]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/rs1[7]                                    |                          | mcpu/im/rs_reg[2]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/sa1[0]                                    |                          | mcpu/pc/immediate_reg[0]_C                     |                1 |              1 |
+|  mcpu/sa1[1]                                    |                          | mcpu/pc/immediate_reg[1]_C                     |                1 |              1 |
+|  mcpu/sa1[2]                                    |                          | mcpu/pc/immediate_reg[2]_C                     |                1 |              1 |
+|  mcpu/sa1[3]                                    |                          | mcpu/pc/immediate_reg[3]_C                     |                1 |              1 |
+|  mcpu/sa1[5]                                    |                          | mcpu/pc/immediate_reg[5]_C                     |                1 |              1 |
+|  mcpu/sa1[6]                                    |                          | mcpu/pc/immediate_reg[6]_C                     |                1 |              1 |
+|  mcpu/sa1[7]                                    |                          | mcpu/pc/immediate_reg[7]_C                     |                1 |              1 |
+|  CLK_IBUF_BUFG                                  |                          |                                                |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/im/op_reg[0]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/p_0_in_0[0]                               |                          | mcpu/im/op_reg[0]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/p_0_in_0[1]                               |                          | mcpu/im/op_reg[1]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/p_0_in_0[2]                               |                          | mcpu/im/op_reg[2]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/p_0_in_0[3]                               |                          | mcpu/im/op_reg[3]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/p_0_out_inferred__1/rs_reg[4]_LDC_i_1_n_0 |                          | mcpu/im/rs_reg[4]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/p_0_in_0[4]                               |                          | mcpu/im/op_reg[4]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/p_0_in_0[5]                               |                          | mcpu/im/op_reg[5]_LDC_i_2_n_0                  |                1 |              1 |
+|  mcpu/p_0_out_inferred__1/rs_reg[3]_LDC_i_1_n_0 |                          | mcpu/im/rs_reg[3]_LDC_i_2_n_0                  |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rs1[0]                                    |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rs1[1]                                    |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rs1[2]                                    |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rs1[3]                                    |                1 |              1 |
+|  mcpu/sa1[4]                                    |                          | mcpu/pc/immediate_reg[4]_C                     |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rs1[5]                                    |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rs1[6]                                    |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rs1[7]                                    |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/p_0_in_0[0]                               |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/p_0_in_0[1]                               |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/p_0_in_0[2]                               |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/p_0_in_0[3]                               |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/p_0_in_0[4]                               |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/p_0_in_0[5]                               |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/p_0_out_inferred__1/rs_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/p_0_out_inferred__1/rs_reg[4]_LDC_i_1_n_0 |                1 |              1 |
+|  mcpu/rd1[1]                                    |                          | mcpu/pc/immediate_reg[9]_C                     |                1 |              1 |
+|  mcpu/rd1[0]                                    |                          | mcpu/pc/immediate_reg[8]_C                     |                1 |              1 |
+|  mcpu/cu/D_Tri_reg[0]_LDC_i_1_n_0               |                          | mcpu/cu/D_Tri_reg[0]_LDC_i_2_n_0               |                1 |              1 |
+|  mcpu/cu/D_Tri_reg[1]_LDC_i_1_n_0               |                          | mcpu/cu/D_Tri_reg[1]_LDC_i_2_n_0               |                1 |              1 |
+|  mcpu/cu/D_Tri_reg[2]_LDC_i_1_n_0               |                          | mcpu/cu/D_Tri_reg[2]_LDC_i_2_n_0               |                1 |              1 |
+|  mcpu/rd1[4]                                    |                          | mcpu/pc/immediate_reg[12]_C                    |                1 |              1 |
+|  mcpu/rd1[5]                                    |                          | mcpu/pc/immediate_reg[13]_C                    |                1 |              1 |
+|  mcpu/rd1[6]                                    |                          | mcpu/pc/immediate_reg[14]_C                    |                1 |              1 |
+|  debounce/key_out_reg_BUFG                      |                          | Reset_IBUF                                     |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[0]_C                     |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[10]_C                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[11]_C                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[12]_C                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[13]_C                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[14]_C                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[15]_C                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[1]_C                     |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[2]_C                     |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[3]_C                     |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[4]_C                     |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[5]_C                     |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[6]_C                     |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[7]_C                     |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[8]_C                     |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/pc/immediate_reg[9]_C                     |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rd1[0]                                    |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rd1[1]                                    |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rd1[2]                                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rd1[3]                                    |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rd1[5]                                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rd1[6]                                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rd1[7]                                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/sa1[7]                                    |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/sa1[0]                                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/sa1[1]                                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/sa1[2]                                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/sa1[3]                                    |                1 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/sa1[4]                                    |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/rd1[4]                                    |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/sa1[5]                                    |                2 |              2 |
+| ~debounce/key_out_reg_BUFG                      |                          | mcpu/sa1[6]                                    |                1 |              2 |
+|  store_reg[3]_i_2_n_0                           |                          |                                                |                1 |              4 |
+|  CLK_IBUF_BUFG                                  | FSM_onehot_AN[4]_i_1_n_0 | Reset_IBUF                                     |                2 |              5 |
+|  mcpu/wtrALU/out_reg[7]_0[0]                    |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_100[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_101[0]                  |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_102[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_103[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_104[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_105[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_106[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_107[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_108[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_109[0]                  |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_11[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_110[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_111[0]                  |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_112[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_113[0]                  |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_114[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_115[0]                  |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_116[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_117[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_118[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_119[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_12[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_120[0]                  |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_121[0]                  |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[7]_128[0]                  |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_129[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_13[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_130[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_131[0]                  |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_132[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_133[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_134[0]                  |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_135[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_136[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_137[0]                  |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_138[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_139[0]                  |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_14[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_140[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_141[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_142[0]                  |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_143[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_144[0]                  |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_145[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_146[0]                  |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_15[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_16[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_17[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_18[0]                   |                          |                                                |                8 |              8 |
+|  mcpu/wtrALU/out_reg[7]_19[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_20[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_22[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_23[0]                   |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[7]_24[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_25[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_26[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_27[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_29[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_3[0]                    |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_4[0]                    |                          |                                                |                8 |              8 |
+|  mcpu/wtrALU/out_reg[7]_40[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_48[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_49[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_5[0]                    |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_50[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_51[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_53[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_54[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_55[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_56[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_57[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_58[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_59[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_6[0]                    |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[7]_60[0]                   |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[7]_61[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_62[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_63[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_64[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_65[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_66[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_67[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_68[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_69[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_7[0]                    |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_70[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_71[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_72[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_73[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_74[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_75[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_76[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_77[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_78[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_79[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_8[0]                    |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_80[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_81[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_82[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_83[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_84[0]                   |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_85[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_86[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_87[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_88[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_89[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_9[0]                    |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[7]_90[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_91[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_92[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_93[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_94[0]                   |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[7]_95[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_96[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[7]_97[0]                   |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[7]_98[0]                   |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[7]_99[0]                   |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/E[0]                               |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[0]_2[0]                    |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_110[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_111[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_112[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_113[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_114[0]                 |                          |                                                |                8 |              8 |
+|  mcpu/wtrALU/out_reg[23]_115[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_116[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_117[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_118[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_119[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_120[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_121[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_122[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_123[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_124[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_125[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_126[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_127[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_128[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_130[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_131[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_132[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_133[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_134[0]                 |                          |                                                |                8 |              8 |
+|  mcpu/wtrALU/out_reg[23]_135[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_136[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_137[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_138[0]                 |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_139[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_140[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_141[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_142[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_143[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_144[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_145[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_146[0]                 |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_147[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_148[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_149[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_150[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_151[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_152[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_153[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_154[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_155[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_156[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_157[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_158[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_159[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_160[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_161[0]                 |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_162[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_164[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_165[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_166[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_167[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_168[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_169[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_170[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_171[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_172[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_173[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_174[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_175[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_179[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_180[0]                 |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_181[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_182[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_183[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_184[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_185[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_186[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_187[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_188[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_189[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_190[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_191[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_192[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_193[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_194[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_195[0]                 |                          |                                                |                8 |              8 |
+|  mcpu/wtrALU/out_reg[23]_196[0]                 |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_197[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_198[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_199[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_200[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_201[0]                 |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_202[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_203[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_204[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_205[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_206[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_207[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_219[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_22[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_220[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_221[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_163[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_223[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_224[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_225[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_226[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_227[0]                 |                          |                                                |                7 |              8 |
+|  mcpu/wtrALU/out_reg[23]_228[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_229[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/cu/out_reg[7]_4[0]                        |                          |                                                |                5 |              8 |
+|  mcpu/cu/out_reg[0][0]                          |                          |                                                |                8 |              8 |
+|  mcpu/cu/out_reg[23]_0[0]                       |                          |                                                |                3 |              8 |
+|  mcpu/cu/out_reg[23]_1[0]                       |                          |                                                |                7 |              8 |
+|  mcpu/cu/out_reg[23]_4[0]                       |                          |                                                |                6 |              8 |
+|  mcpu/cu/out_reg[23]_2[0]                       |                          |                                                |                5 |              8 |
+|  mcpu/cu/out_reg[23]_3[0]                       |                          |                                                |                8 |              8 |
+|  mcpu/cu/out_reg[23]_5[0]                       |                          |                                                |                3 |              8 |
+|  mcpu/cu/out_reg[23]_6[0]                       |                          |                                                |                5 |              8 |
+|  mcpu/cu/out_reg[7][0]                          |                          |                                                |                4 |              8 |
+|  mcpu/cu/out_reg[7]_0[0]                        |                          |                                                |                7 |              8 |
+|  mcpu/cu/out_reg[7]_1[0]                        |                          |                                                |                4 |              8 |
+|  mcpu/cu/out_reg[7]_2[0]                        |                          |                                                |                4 |              8 |
+|  mcpu/cu/out_reg[7]_3[0]                        |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_230[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_231[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_232[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_233[0]                 |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_234[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_235[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_236[0]                 |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_237[0]                 |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_238[0]                 |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_239[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_240[0]                 |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_241[0]                 |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_63[0]                  |                          |                                                |                3 |              8 |
+|  mcpu/wtrALU/out_reg[23]_89[0]                  |                          |                                                |                4 |              8 |
+|  mcpu/wtrALU/out_reg[23]_90[0]                  |                          |                                                |                6 |              8 |
+|  mcpu/wtrALU/out_reg[23]_91[0]                  |                          |                                                |                5 |              8 |
+|  mcpu/wtrALU/out_reg[23]_222[0]                 |                          |                                                |                6 |              8 |
+|  CLK_IBUF_BUFG                                  |                          | Reset_IBUF                                     |                5 |             17 |
+|  CLK_IBUF_BUFG                                  |                          | debounce/clear                                 |                6 |             22 |
+|  CLK_IBUF_BUFG                                  |                          | Button_IBUF                                    |                6 |             22 |
+|  debounce/key_out_reg_BUFG                      |                          | mcpu/im/out_reg[31]                            |               14 |             32 |
+| ~DataMemRW                                      |                          |                                                |               32 |             32 |
+| ~debounce/key_out_reg_BUFG                      | mcpu/cu/E[0]             | Reset_IBUF                                     |               15 |             39 |
+|  debounce/key_out_reg_BUFG                      |                          | mcpu/im/out_reg[31]_0                          |               20 |             56 |
+|  debounce/key_out_reg_BUFG                      |                          |                                                |               38 |             85 |
+| ~debounce/key_out_reg_BUFG                      | mcpu/im/p_0_in           |                                                |               12 |             96 |
++-------------------------------------------------+--------------------------+------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    74 |
+| 2      |                    33 |
+| 4      |                     1 |
+| 5      |                     1 |
+| 8      |                   256 |
+| 16+    |                     9 |
++--------+-----------------------+
+
+

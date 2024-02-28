@@ -1,0 +1,1 @@
+-wto "afcb104e5aaf4a72973e58500631a0f3" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_Single_Cycle_CPU_behav" "xil_defaultlib.tb_Single_Cycle_CPU" "xil_defaultlib.glbl" -log "elaborate.log" 

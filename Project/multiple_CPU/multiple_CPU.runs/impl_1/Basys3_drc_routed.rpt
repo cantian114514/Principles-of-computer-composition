@@ -1,0 +1,1510 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sat Dec 24 12:59:43 2022
+| Host         : LAPTOP-73QU987G running 64-bit major release  (build 9200)
+| Command      : report_drc -file Basys3_drc_routed.rpt -pb Basys3_drc_routed.pb -rpx Basys3_drc_routed.rpx
+| Design       : Basys3
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 293
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 292        |
++----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net mcpu/cu/D_Tri_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin mcpu/cu/D_Tri_reg[0]_LDC_i_1/O, cell mcpu/cu/D_Tri_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net mcpu/cu/D_Tri_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin mcpu/cu/D_Tri_reg[1]_LDC_i_1/O, cell mcpu/cu/D_Tri_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net mcpu/cu/D_Tri_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin mcpu/cu/D_Tri_reg[2]_LDC_i_1/O, cell mcpu/cu/D_Tri_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[0][0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[43][7]_i_2/O, cell mcpu/cu/mem_reg[43][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[23]_0[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[2][7]_i_2/O, cell mcpu/cu/mem_reg[2][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[23]_1[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[5][7]_i_2/O, cell mcpu/cu/mem_reg[5][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[23]_2[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[6][7]_i_2/O, cell mcpu/cu/mem_reg[6][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[23]_3[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[225][7]_i_2/O, cell mcpu/cu/mem_reg[225][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[23]_4[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[13][7]_i_2/O, cell mcpu/cu/mem_reg[13][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[23]_5[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[14][7]_i_2/O, cell mcpu/cu/mem_reg[14][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[23]_6[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[121][7]_i_2/O, cell mcpu/cu/mem_reg[121][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[7][0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[39][7]_i_2/O, cell mcpu/cu/mem_reg[39][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[7]_0[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[124][7]_i_2/O, cell mcpu/cu/mem_reg[124][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[7]_1[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[4][7]_i_2/O, cell mcpu/cu/mem_reg[4][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[7]_2[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[7][7]_i_2/O, cell mcpu/cu/mem_reg[7][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[7]_3[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[195][7]_i_2/O, cell mcpu/cu/mem_reg[195][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net mcpu/cu/out_reg[7]_4[0] is a gated clock net sourced by a combinational pin mcpu/cu/mem_reg[16][7]_i_2/O, cell mcpu/cu/mem_reg[16][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net mcpu/p_0_in_0[0] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__1/op_reg[0]_LDC_i_1/O, cell mcpu/p_0_out_inferred__1/op_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net mcpu/p_0_in_0[1] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__1/op_reg[1]_LDC_i_1/O, cell mcpu/p_0_out_inferred__1/op_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net mcpu/p_0_in_0[2] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__1/op_reg[2]_LDC_i_1/O, cell mcpu/p_0_out_inferred__1/op_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net mcpu/p_0_in_0[3] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__1/op_reg[3]_LDC_i_1/O, cell mcpu/p_0_out_inferred__1/op_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net mcpu/p_0_in_0[4] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__1/op_reg[4]_LDC_i_1/O, cell mcpu/p_0_out_inferred__1/op_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net mcpu/p_0_in_0[5] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__1/op_reg[5]_LDC_i_1/O, cell mcpu/p_0_out_inferred__1/op_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net mcpu/p_0_out_inferred__1/rs_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__1/rs_reg[3]_LDC_i_1/O, cell mcpu/p_0_out_inferred__1/rs_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net mcpu/p_0_out_inferred__1/rs_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__1/rs_reg[4]_LDC_i_1/O, cell mcpu/p_0_out_inferred__1/rs_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net mcpu/rd1[0] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__0/immediate_reg[8]_LDC_i_1/O, cell mcpu/p_0_out_inferred__0/immediate_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net mcpu/rd1[1] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__0/immediate_reg[9]_LDC_i_1/O, cell mcpu/p_0_out_inferred__0/immediate_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net mcpu/rd1[2] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__0/immediate_reg[10]_LDC_i_1/O, cell mcpu/p_0_out_inferred__0/immediate_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net mcpu/rd1[3] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__0/immediate_reg[11]_LDC_i_1/O, cell mcpu/p_0_out_inferred__0/immediate_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net mcpu/rd1[4] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__0/immediate_reg[12]_LDC_i_1/O, cell mcpu/p_0_out_inferred__0/immediate_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net mcpu/rd1[5] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__0/immediate_reg[13]_LDC_i_1/O, cell mcpu/p_0_out_inferred__0/immediate_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net mcpu/rd1[6] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__0/immediate_reg[14]_LDC_i_1/O, cell mcpu/p_0_out_inferred__0/immediate_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net mcpu/rd1[7] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__0/immediate_reg[15]_LDC_i_1/O, cell mcpu/p_0_out_inferred__0/immediate_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net mcpu/rs1[0] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__2/rt_reg[0]_LDC_i_1/O, cell mcpu/p_0_out_inferred__2/rt_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net mcpu/rs1[1] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__2/rt_reg[1]_LDC_i_1/O, cell mcpu/p_0_out_inferred__2/rt_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net mcpu/rs1[2] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__2/rt_reg[2]_LDC_i_1/O, cell mcpu/p_0_out_inferred__2/rt_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net mcpu/rs1[3] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__2/rt_reg[3]_LDC_i_1/O, cell mcpu/p_0_out_inferred__2/rt_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net mcpu/rs1[4] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__2/rt_reg[4]_LDC_i_1/O, cell mcpu/p_0_out_inferred__2/rt_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net mcpu/rs1[5] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__2/rs_reg[0]_LDC_i_1/O, cell mcpu/p_0_out_inferred__2/rs_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net mcpu/rs1[6] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__2/rs_reg[1]_LDC_i_1/O, cell mcpu/p_0_out_inferred__2/rs_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net mcpu/rs1[7] is a gated clock net sourced by a combinational pin mcpu/p_0_out_inferred__2/rs_reg[2]_LDC_i_1/O, cell mcpu/p_0_out_inferred__2/rs_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net mcpu/sa1[0] is a gated clock net sourced by a combinational pin mcpu/immediate_reg[0]_LDC_i_1/O, cell mcpu/immediate_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net mcpu/sa1[1] is a gated clock net sourced by a combinational pin mcpu/immediate_reg[1]_LDC_i_1/O, cell mcpu/immediate_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net mcpu/sa1[2] is a gated clock net sourced by a combinational pin mcpu/immediate_reg[2]_LDC_i_1/O, cell mcpu/immediate_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net mcpu/sa1[3] is a gated clock net sourced by a combinational pin mcpu/immediate_reg[3]_LDC_i_1/O, cell mcpu/immediate_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net mcpu/sa1[4] is a gated clock net sourced by a combinational pin mcpu/immediate_reg[4]_LDC_i_1/O, cell mcpu/immediate_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net mcpu/sa1[5] is a gated clock net sourced by a combinational pin mcpu/immediate_reg[5]_LDC_i_1/O, cell mcpu/immediate_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net mcpu/sa1[6] is a gated clock net sourced by a combinational pin mcpu/immediate_reg[6]_LDC_i_1/O, cell mcpu/immediate_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net mcpu/sa1[7] is a gated clock net sourced by a combinational pin mcpu/immediate_reg[7]_LDC_i_1/O, cell mcpu/immediate_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net mcpu/wtrALU/E[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[0][7]_i_2/O, cell mcpu/wtrALU/mem_reg[0][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[0]_2[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[131][7]_i_2/O, cell mcpu/wtrALU/mem_reg[131][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_110[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[145][7]_i_2/O, cell mcpu/wtrALU/mem_reg[145][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_111[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[85][7]_i_2/O, cell mcpu/wtrALU/mem_reg[85][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_112[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[89][7]_i_2/O, cell mcpu/wtrALU/mem_reg[89][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_113[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[162][7]_i_2/O, cell mcpu/wtrALU/mem_reg[162][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_114[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[90][7]_i_2/O, cell mcpu/wtrALU/mem_reg[90][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_115[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[82][7]_i_2/O, cell mcpu/wtrALU/mem_reg[82][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_116[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[158][7]_i_2/O, cell mcpu/wtrALU/mem_reg[158][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_117[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[150][7]_i_2/O, cell mcpu/wtrALU/mem_reg[150][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_118[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[186][7]_i_2/O, cell mcpu/wtrALU/mem_reg[186][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_119[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[166][7]_i_2/O, cell mcpu/wtrALU/mem_reg[166][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_120[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[213][7]_i_2/O, cell mcpu/wtrALU/mem_reg[213][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_121[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[149][7]_i_2/O, cell mcpu/wtrALU/mem_reg[149][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_122[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[78][7]_i_2/O, cell mcpu/wtrALU/mem_reg[78][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_123[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[214][7]_i_2/O, cell mcpu/wtrALU/mem_reg[214][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_124[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[233][7]_i_2/O, cell mcpu/wtrALU/mem_reg[233][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_125[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[126][7]_i_2/O, cell mcpu/wtrALU/mem_reg[126][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_126[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[74][7]_i_2/O, cell mcpu/wtrALU/mem_reg[74][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_127[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[73][7]_i_2/O, cell mcpu/wtrALU/mem_reg[73][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_128[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[189][7]_i_2/O, cell mcpu/wtrALU/mem_reg[189][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_130[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[118][7]_i_2/O, cell mcpu/wtrALU/mem_reg[118][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_131[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[94][7]_i_2/O, cell mcpu/wtrALU/mem_reg[94][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_132[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[70][7]_i_2/O, cell mcpu/wtrALU/mem_reg[70][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_133[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[69][7]_i_2/O, cell mcpu/wtrALU/mem_reg[69][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_134[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[249][7]_i_2/O, cell mcpu/wtrALU/mem_reg[249][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_135[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[246][7]_i_2/O, cell mcpu/wtrALU/mem_reg[246][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_136[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[238][7]_i_2/O, cell mcpu/wtrALU/mem_reg[238][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_137[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[210][7]_i_2/O, cell mcpu/wtrALU/mem_reg[210][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_138[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[190][7]_i_2/O, cell mcpu/wtrALU/mem_reg[190][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_139[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[198][7]_i_2/O, cell mcpu/wtrALU/mem_reg[198][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_140[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[62][7]_i_2/O, cell mcpu/wtrALU/mem_reg[62][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_141[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[205][7]_i_2/O, cell mcpu/wtrALU/mem_reg[205][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_142[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[165][7]_i_2/O, cell mcpu/wtrALU/mem_reg[165][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_143[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[97][7]_i_2/O, cell mcpu/wtrALU/mem_reg[97][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#85 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_144[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[177][7]_i_2/O, cell mcpu/wtrALU/mem_reg[177][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#86 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_145[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[185][7]_i_2/O, cell mcpu/wtrALU/mem_reg[185][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#87 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_146[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[250][7]_i_2/O, cell mcpu/wtrALU/mem_reg[250][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#88 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_147[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[98][7]_i_2/O, cell mcpu/wtrALU/mem_reg[98][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#89 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_148[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[138][7]_i_2/O, cell mcpu/wtrALU/mem_reg[138][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#90 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_149[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[58][7]_i_2/O, cell mcpu/wtrALU/mem_reg[58][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#91 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_150[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[134][7]_i_2/O, cell mcpu/wtrALU/mem_reg[134][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#92 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_151[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[57][7]_i_2/O, cell mcpu/wtrALU/mem_reg[57][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#93 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_152[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[170][7]_i_2/O, cell mcpu/wtrALU/mem_reg[170][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#94 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_153[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[54][7]_i_2/O, cell mcpu/wtrALU/mem_reg[54][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#95 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_154[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[242][7]_i_2/O, cell mcpu/wtrALU/mem_reg[242][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#96 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_155[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[209][7]_i_2/O, cell mcpu/wtrALU/mem_reg[209][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#97 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_156[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[178][7]_i_2/O, cell mcpu/wtrALU/mem_reg[178][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#98 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_157[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[217][7]_i_2/O, cell mcpu/wtrALU/mem_reg[217][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#99 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_158[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[101][7]_i_2/O, cell mcpu/wtrALU/mem_reg[101][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#100 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_159[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[50][7]_i_2/O, cell mcpu/wtrALU/mem_reg[50][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#101 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_160[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[230][7]_i_2/O, cell mcpu/wtrALU/mem_reg[230][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#102 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_161[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[181][7]_i_2/O, cell mcpu/wtrALU/mem_reg[181][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#103 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_162[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[102][7]_i_2/O, cell mcpu/wtrALU/mem_reg[102][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#104 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_163[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[182][7]_i_2/O, cell mcpu/wtrALU/mem_reg[182][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#105 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_164[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[46][7]_i_2/O, cell mcpu/wtrALU/mem_reg[46][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#106 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_165[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[45][7]_i_2/O, cell mcpu/wtrALU/mem_reg[45][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#107 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_166[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[218][7]_i_2/O, cell mcpu/wtrALU/mem_reg[218][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#108 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_167[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[122][7]_i_2/O, cell mcpu/wtrALU/mem_reg[122][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#109 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_168[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[229][7]_i_2/O, cell mcpu/wtrALU/mem_reg[229][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#110 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_169[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[234][7]_i_2/O, cell mcpu/wtrALU/mem_reg[234][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#111 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_170[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[105][7]_i_2/O, cell mcpu/wtrALU/mem_reg[105][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#112 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_171[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[201][7]_i_2/O, cell mcpu/wtrALU/mem_reg[201][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#113 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_172[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[130][7]_i_2/O, cell mcpu/wtrALU/mem_reg[130][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#114 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_173[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[106][7]_i_2/O, cell mcpu/wtrALU/mem_reg[106][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#115 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_174[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[161][7]_i_2/O, cell mcpu/wtrALU/mem_reg[161][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#116 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_175[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[34][7]_i_2/O, cell mcpu/wtrALU/mem_reg[34][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#117 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_179[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[114][7]_i_2/O, cell mcpu/wtrALU/mem_reg[114][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#118 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_180[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[1][7]_i_2/O, cell mcpu/wtrALU/mem_reg[1][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#119 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_181[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[125][7]_i_2/O, cell mcpu/wtrALU/mem_reg[125][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#120 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_182[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[237][7]_i_2/O, cell mcpu/wtrALU/mem_reg[237][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#121 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_183[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[33][7]_i_2/O, cell mcpu/wtrALU/mem_reg[33][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#122 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_184[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[193][7]_i_2/O, cell mcpu/wtrALU/mem_reg[193][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#123 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_185[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[221][7]_i_2/O, cell mcpu/wtrALU/mem_reg[221][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#124 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_186[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[197][7]_i_2/O, cell mcpu/wtrALU/mem_reg[197][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#125 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_187[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[30][7]_i_2/O, cell mcpu/wtrALU/mem_reg[30][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#126 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_188[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[173][7]_i_2/O, cell mcpu/wtrALU/mem_reg[173][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#127 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_189[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[110][7]_i_2/O, cell mcpu/wtrALU/mem_reg[110][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#128 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_190[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[29][7]_i_2/O, cell mcpu/wtrALU/mem_reg[29][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#129 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_191[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[202][7]_i_2/O, cell mcpu/wtrALU/mem_reg[202][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#130 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_192[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[253][7]_i_2/O, cell mcpu/wtrALU/mem_reg[253][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#131 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_193[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[222][7]_i_2/O, cell mcpu/wtrALU/mem_reg[222][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#132 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_194[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[26][7]_i_2/O, cell mcpu/wtrALU/mem_reg[26][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#133 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_195[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[154][7]_i_2/O, cell mcpu/wtrALU/mem_reg[154][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#134 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_196[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[21][7]_i_2/O, cell mcpu/wtrALU/mem_reg[21][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#135 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_197[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[146][7]_i_2/O, cell mcpu/wtrALU/mem_reg[146][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#136 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_198[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[113][7]_i_2/O, cell mcpu/wtrALU/mem_reg[113][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#137 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_199[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[241][7]_i_2/O, cell mcpu/wtrALU/mem_reg[241][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#138 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_200[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[174][7]_i_2/O, cell mcpu/wtrALU/mem_reg[174][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#139 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_201[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[18][7]_i_2/O, cell mcpu/wtrALU/mem_reg[18][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#140 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_202[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[17][7]_i_2/O, cell mcpu/wtrALU/mem_reg[17][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#141 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_203[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[254][7]_i_2/O, cell mcpu/wtrALU/mem_reg[254][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#142 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_204[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[206][7]_i_2/O, cell mcpu/wtrALU/mem_reg[206][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#143 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_205[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[133][7]_i_2/O, cell mcpu/wtrALU/mem_reg[133][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#144 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_206[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[245][7]_i_2/O, cell mcpu/wtrALU/mem_reg[245][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#145 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_207[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[226][7]_i_2/O, cell mcpu/wtrALU/mem_reg[226][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#146 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_219[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[86][7]_i_2/O, cell mcpu/wtrALU/mem_reg[86][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#147 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_220[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[81][7]_i_2/O, cell mcpu/wtrALU/mem_reg[81][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#148 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_221[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[77][7]_i_2/O, cell mcpu/wtrALU/mem_reg[77][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#149 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_222[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[61][7]_i_2/O, cell mcpu/wtrALU/mem_reg[61][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#150 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_223[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[49][7]_i_2/O, cell mcpu/wtrALU/mem_reg[49][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#151 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_224[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[42][7]_i_2/O, cell mcpu/wtrALU/mem_reg[42][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#152 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_225[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[41][7]_i_2/O, cell mcpu/wtrALU/mem_reg[41][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#153 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_226[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[25][7]_i_2/O, cell mcpu/wtrALU/mem_reg[25][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#154 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_227[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[9][7]_i_2/O, cell mcpu/wtrALU/mem_reg[9][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#155 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_228[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[53][7]_i_2/O, cell mcpu/wtrALU/mem_reg[53][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#156 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_229[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[38][7]_i_2/O, cell mcpu/wtrALU/mem_reg[38][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#157 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_22[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[10][7]_i_2/O, cell mcpu/wtrALU/mem_reg[10][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#158 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_230[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[37][7]_i_2/O, cell mcpu/wtrALU/mem_reg[37][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#159 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_231[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[22][7]_i_2/O, cell mcpu/wtrALU/mem_reg[22][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#160 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_232[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[142][7]_i_2/O, cell mcpu/wtrALU/mem_reg[142][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#161 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_233[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[141][7]_i_2/O, cell mcpu/wtrALU/mem_reg[141][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#162 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_234[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[169][7]_i_2/O, cell mcpu/wtrALU/mem_reg[169][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#163 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_235[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[157][7]_i_2/O, cell mcpu/wtrALU/mem_reg[157][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#164 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_236[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[153][7]_i_2/O, cell mcpu/wtrALU/mem_reg[153][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#165 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_237[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[117][7]_i_2/O, cell mcpu/wtrALU/mem_reg[117][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#166 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_238[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[109][7]_i_2/O, cell mcpu/wtrALU/mem_reg[109][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#167 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_239[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[93][7]_i_2/O, cell mcpu/wtrALU/mem_reg[93][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#168 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_240[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[194][7]_i_2/O, cell mcpu/wtrALU/mem_reg[194][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#169 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_241[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[129][7]_i_2/O, cell mcpu/wtrALU/mem_reg[129][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#170 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_63[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[255][7]_i_2/O, cell mcpu/wtrALU/mem_reg[255][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#171 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_89[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[65][7]_i_2/O, cell mcpu/wtrALU/mem_reg[65][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#172 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_90[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[66][7]_i_2/O, cell mcpu/wtrALU/mem_reg[66][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#173 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[23]_91[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[137][7]_i_2/O, cell mcpu/wtrALU/mem_reg[137][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#174 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_0[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[191][7]_i_2/O, cell mcpu/wtrALU/mem_reg[191][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#175 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_100[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[36][7]_i_2/O, cell mcpu/wtrALU/mem_reg[36][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#176 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_101[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[180][7]_i_2/O, cell mcpu/wtrALU/mem_reg[180][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#177 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_102[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[107][7]_i_2/O, cell mcpu/wtrALU/mem_reg[107][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#178 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_103[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[35][7]_i_2/O, cell mcpu/wtrALU/mem_reg[35][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#179 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_104[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[243][7]_i_2/O, cell mcpu/wtrALU/mem_reg[243][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#180 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_105[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[224][7]_i_2/O, cell mcpu/wtrALU/mem_reg[224][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#181 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_106[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[108][7]_i_2/O, cell mcpu/wtrALU/mem_reg[108][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#182 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_107[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[147][7]_i_2/O, cell mcpu/wtrALU/mem_reg[147][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#183 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_108[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[159][7]_i_2/O, cell mcpu/wtrALU/mem_reg[159][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#184 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_109[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[208][7]_i_2/O, cell mcpu/wtrALU/mem_reg[208][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#185 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_110[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[31][7]_i_2/O, cell mcpu/wtrALU/mem_reg[31][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#186 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_111[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[200][7]_i_2/O, cell mcpu/wtrALU/mem_reg[200][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#187 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_112[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[28][7]_i_2/O, cell mcpu/wtrALU/mem_reg[28][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#188 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_113[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[196][7]_i_2/O, cell mcpu/wtrALU/mem_reg[196][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#189 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_114[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[204][7]_i_2/O, cell mcpu/wtrALU/mem_reg[204][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#190 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_115[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[228][7]_i_2/O, cell mcpu/wtrALU/mem_reg[228][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#191 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_116[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[163][7]_i_2/O, cell mcpu/wtrALU/mem_reg[163][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#192 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_117[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[123][7]_i_2/O, cell mcpu/wtrALU/mem_reg[123][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#193 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_118[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[20][7]_i_2/O, cell mcpu/wtrALU/mem_reg[20][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#194 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_119[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[155][7]_i_2/O, cell mcpu/wtrALU/mem_reg[155][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#195 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_11[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[103][7]_i_2/O, cell mcpu/wtrALU/mem_reg[103][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#196 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_120[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[115][7]_i_2/O, cell mcpu/wtrALU/mem_reg[115][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#197 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_121[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[116][7]_i_2/O, cell mcpu/wtrALU/mem_reg[116][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#198 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_128[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[76][7]_i_2/O, cell mcpu/wtrALU/mem_reg[76][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#199 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_129[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[83][7]_i_2/O, cell mcpu/wtrALU/mem_reg[83][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#200 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_12[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[111][7]_i_2/O, cell mcpu/wtrALU/mem_reg[111][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#201 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_130[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[67][7]_i_2/O, cell mcpu/wtrALU/mem_reg[67][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#202 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_131[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[60][7]_i_2/O, cell mcpu/wtrALU/mem_reg[60][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#203 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_132[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[32][7]_i_2/O, cell mcpu/wtrALU/mem_reg[32][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#204 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_133[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[12][7]_i_2/O, cell mcpu/wtrALU/mem_reg[12][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#205 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_134[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[40][7]_i_2/O, cell mcpu/wtrALU/mem_reg[40][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#206 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_135[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[27][7]_i_2/O, cell mcpu/wtrALU/mem_reg[27][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#207 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_136[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[24][7]_i_2/O, cell mcpu/wtrALU/mem_reg[24][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#208 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_137[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[11][7]_i_2/O, cell mcpu/wtrALU/mem_reg[11][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#209 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_138[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[23][7]_i_2/O, cell mcpu/wtrALU/mem_reg[23][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#210 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_139[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[3][7]_i_2/O, cell mcpu/wtrALU/mem_reg[3][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#211 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_13[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[179][7]_i_2/O, cell mcpu/wtrALU/mem_reg[179][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#212 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_140[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[140][7]_i_2/O, cell mcpu/wtrALU/mem_reg[140][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#213 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_141[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[136][7]_i_2/O, cell mcpu/wtrALU/mem_reg[136][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#214 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_142[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[156][7]_i_2/O, cell mcpu/wtrALU/mem_reg[156][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#215 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_143[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[132][7]_i_2/O, cell mcpu/wtrALU/mem_reg[132][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#216 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_144[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[128][7]_i_2/O, cell mcpu/wtrALU/mem_reg[128][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#217 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_145[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[96][7]_i_2/O, cell mcpu/wtrALU/mem_reg[96][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#218 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_146[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[112][7]_i_2/O, cell mcpu/wtrALU/mem_reg[112][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#219 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_14[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[151][7]_i_2/O, cell mcpu/wtrALU/mem_reg[151][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#220 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_15[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[135][7]_i_2/O, cell mcpu/wtrALU/mem_reg[135][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#221 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_16[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[183][7]_i_2/O, cell mcpu/wtrALU/mem_reg[183][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#222 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_17[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[171][7]_i_2/O, cell mcpu/wtrALU/mem_reg[171][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#223 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_18[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[99][7]_i_2/O, cell mcpu/wtrALU/mem_reg[99][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#224 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_19[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[207][7]_i_2/O, cell mcpu/wtrALU/mem_reg[207][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#225 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_20[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[223][7]_i_2/O, cell mcpu/wtrALU/mem_reg[223][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#226 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_22[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[211][7]_i_2/O, cell mcpu/wtrALU/mem_reg[211][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#227 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_23[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[203][7]_i_2/O, cell mcpu/wtrALU/mem_reg[203][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#228 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_24[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[231][7]_i_2/O, cell mcpu/wtrALU/mem_reg[231][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#229 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_25[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[51][7]_i_2/O, cell mcpu/wtrALU/mem_reg[51][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#230 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_26[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[19][7]_i_2/O, cell mcpu/wtrALU/mem_reg[19][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#231 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_27[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[187][7]_i_2/O, cell mcpu/wtrALU/mem_reg[187][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#232 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_29[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[8][7]_i_2/O, cell mcpu/wtrALU/mem_reg[8][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#233 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_3[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[15][7]_i_2/O, cell mcpu/wtrALU/mem_reg[15][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#234 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_40[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[199][7]_i_2/O, cell mcpu/wtrALU/mem_reg[199][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#235 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_48[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[143][7]_i_2/O, cell mcpu/wtrALU/mem_reg[143][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#236 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_49[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[227][7]_i_2/O, cell mcpu/wtrALU/mem_reg[227][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#237 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_4[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[47][7]_i_2/O, cell mcpu/wtrALU/mem_reg[47][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#238 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_50[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[235][7]_i_2/O, cell mcpu/wtrALU/mem_reg[235][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#239 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_51[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[160][7]_i_2/O, cell mcpu/wtrALU/mem_reg[160][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#240 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_53[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[88][7]_i_2/O, cell mcpu/wtrALU/mem_reg[88][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#241 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_54[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[87][7]_i_2/O, cell mcpu/wtrALU/mem_reg[87][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#242 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_55[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[244][7]_i_2/O, cell mcpu/wtrALU/mem_reg[244][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#243 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_56[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[127][7]_i_2/O, cell mcpu/wtrALU/mem_reg[127][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#244 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_57[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[248][7]_i_2/O, cell mcpu/wtrALU/mem_reg[248][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#245 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_58[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[240][7]_i_2/O, cell mcpu/wtrALU/mem_reg[240][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#246 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_59[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[212][7]_i_2/O, cell mcpu/wtrALU/mem_reg[212][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#247 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_5[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[79][7]_i_2/O, cell mcpu/wtrALU/mem_reg[79][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#248 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_60[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[84][7]_i_2/O, cell mcpu/wtrALU/mem_reg[84][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#249 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_61[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[247][7]_i_2/O, cell mcpu/wtrALU/mem_reg[247][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#250 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_62[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[236][7]_i_2/O, cell mcpu/wtrALU/mem_reg[236][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#251 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_63[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[91][7]_i_2/O, cell mcpu/wtrALU/mem_reg[91][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#252 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_64[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[80][7]_i_2/O, cell mcpu/wtrALU/mem_reg[80][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#253 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_65[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[92][7]_i_2/O, cell mcpu/wtrALU/mem_reg[92][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#254 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_66[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[232][7]_i_2/O, cell mcpu/wtrALU/mem_reg[232][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#255 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_67[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[188][7]_i_2/O, cell mcpu/wtrALU/mem_reg[188][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#256 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_68[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[72][7]_i_2/O, cell mcpu/wtrALU/mem_reg[72][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#257 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_69[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[71][7]_i_2/O, cell mcpu/wtrALU/mem_reg[71][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#258 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_6[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[175][7]_i_2/O, cell mcpu/wtrALU/mem_reg[175][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#259 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_70[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[239][7]_i_2/O, cell mcpu/wtrALU/mem_reg[239][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#260 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_71[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[168][7]_i_2/O, cell mcpu/wtrALU/mem_reg[168][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#261 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_72[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[95][7]_i_2/O, cell mcpu/wtrALU/mem_reg[95][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#262 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_73[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[68][7]_i_2/O, cell mcpu/wtrALU/mem_reg[68][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#263 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_74[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[215][7]_i_2/O, cell mcpu/wtrALU/mem_reg[215][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#264 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_75[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[120][7]_i_2/O, cell mcpu/wtrALU/mem_reg[120][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#265 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_76[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[64][7]_i_2/O, cell mcpu/wtrALU/mem_reg[64][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#266 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_77[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[63][7]_i_2/O, cell mcpu/wtrALU/mem_reg[63][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#267 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_78[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[216][7]_i_2/O, cell mcpu/wtrALU/mem_reg[216][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#268 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_79[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[176][7]_i_2/O, cell mcpu/wtrALU/mem_reg[176][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#269 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_7[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[167][7]_i_2/O, cell mcpu/wtrALU/mem_reg[167][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#270 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_80[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[59][7]_i_2/O, cell mcpu/wtrALU/mem_reg[59][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#271 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_81[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[56][7]_i_2/O, cell mcpu/wtrALU/mem_reg[56][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#272 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_82[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[55][7]_i_2/O, cell mcpu/wtrALU/mem_reg[55][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#273 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_83[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[100][7]_i_2/O, cell mcpu/wtrALU/mem_reg[100][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#274 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_84[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[152][7]_i_2/O, cell mcpu/wtrALU/mem_reg[152][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#275 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_85[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[52][7]_i_2/O, cell mcpu/wtrALU/mem_reg[52][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#276 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_86[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[164][7]_i_2/O, cell mcpu/wtrALU/mem_reg[164][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#277 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_87[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[172][7]_i_2/O, cell mcpu/wtrALU/mem_reg[172][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#278 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_88[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[148][7]_i_2/O, cell mcpu/wtrALU/mem_reg[148][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#279 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_89[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[48][7]_i_2/O, cell mcpu/wtrALU/mem_reg[48][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#280 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_8[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[75][7]_i_2/O, cell mcpu/wtrALU/mem_reg[75][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#281 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_90[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[139][7]_i_2/O, cell mcpu/wtrALU/mem_reg[139][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#282 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_91[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[192][7]_i_2/O, cell mcpu/wtrALU/mem_reg[192][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#283 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_92[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[44][7]_i_2/O, cell mcpu/wtrALU/mem_reg[44][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#284 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_93[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[104][7]_i_2/O, cell mcpu/wtrALU/mem_reg[104][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#285 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_94[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[219][7]_i_2/O, cell mcpu/wtrALU/mem_reg[219][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#286 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_95[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[251][7]_i_2/O, cell mcpu/wtrALU/mem_reg[251][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#287 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_96[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[184][7]_i_2/O, cell mcpu/wtrALU/mem_reg[184][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#288 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_97[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[252][7]_i_2/O, cell mcpu/wtrALU/mem_reg[252][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#289 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_98[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[220][7]_i_2/O, cell mcpu/wtrALU/mem_reg[220][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#290 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_99[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[144][7]_i_2/O, cell mcpu/wtrALU/mem_reg[144][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#291 Warning
+Gated clock check  
+Net mcpu/wtrALU/out_reg[7]_9[0] is a gated clock net sourced by a combinational pin mcpu/wtrALU/mem_reg[119][7]_i_2/O, cell mcpu/wtrALU/mem_reg[119][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#292 Warning
+Gated clock check  
+Net store_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin store_reg[3]_i_2/O, cell store_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

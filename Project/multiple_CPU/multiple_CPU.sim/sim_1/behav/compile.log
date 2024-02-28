@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Ins_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ins_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX2L_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2L_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX4L_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4L_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/MUX4L_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4L_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/SignZeroExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignZeroExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/WTR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WTR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sources_1/new/multipleCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multipleCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.srcs/sim_1/new/Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Project/multiple_CPU/multiple_CPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

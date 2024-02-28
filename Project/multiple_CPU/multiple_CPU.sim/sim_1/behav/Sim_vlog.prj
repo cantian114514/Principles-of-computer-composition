@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/ALU.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/ControlUnit.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/DataMemory.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/Ins_mem.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/MUX2L_32.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/MUX4L_32.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/MUX4L_5.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/PC.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/Register_File.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/SignZeroExtend.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/WTR.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sources_1/new/multipleCPU.v"
+verilog xil_defaultlib  "../../../multiple_CPU.srcs/sim_1/new/Sim.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
